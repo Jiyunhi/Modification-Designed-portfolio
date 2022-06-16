@@ -1,0 +1,552 @@
+@font-face {
+    font-family: 'gsb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gsm';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Style for our header texts
+* --------------------------------------- */
+h1{
+    font-family: arial,helvetica;
+    color: #555;
+    margin:0;
+    padding:0;
+}
+
+h2{
+    background: url(../images/h2under2.jpg) no-repeat left bottom;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px #ddd;
+    padding-left: 10px;
+}
+
+h3 { 
+    color: #D9414E;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+h4 { 
+    text-align: center;
+    font-size: 2rem;
+}
+
+p{
+    color: #555;
+    font-size: 1.8rem;
+    font-family: 'Noto Sans KR';
+}
+
+.wrap{
+    width: 80%;
+    position: relative;
+}
+
+.wrap:after, ul:after, .cl:after{
+    display: block; 
+    content: "";
+    clear: both;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+    text-align: left;
+}
+
+/* Fixed header and footer.
+* --------------------------------------- */
+#header{
+    position: fixed;
+    height: 130px;
+    display:block;
+    width: 100%;
+    z-index: 2;
+    padding: 2% 0 0 2%;
+    box-sizing: border-box;
+    top: 0px;
+}
+#header h1 a{ 
+    display: inline-block;
+}
+
+#footer{
+    bottom:-600%;
+    position:absolute;
+    height: 50px;
+    display:block;
+    width: 100%;
+    background: #333;
+    z-index:9;
+    text-align:center;
+    color: #f2f2f2;
+    padding: 20px 0 0 0;
+}
+
+/* Loading page
+* --------------------------------------- */
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background: #fff;
+}
+#loading strong{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+#loading strong span{
+    font-family: 'gsm';
+    color: #333;
+    font-size: 50px;
+    margin-right: 3%;
+    position: relative;
+}
+#loading strong span:last-child{
+    margin-right: 0%;
+    color:#d90404;
+}
+
+/* Main_section0
+* --------------------------------------- */
+#section0 .intro .text{
+    display: inline-block; 
+    position: absolute;
+    bottom: 25%;
+    right: 8%;
+    z-index: 1;
+    width: 20%;
+}
+#section0 .intro .text img{
+    width: 100%;
+}
+#section0 .intro{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#section0 .intro .bg img:nth-child(1){
+    position: absolute;
+    bottom: -50%;
+    left: -15%;
+    animation: maincircle 120s infinite linear;
+}
+    @keyframes maincircle{
+        100%{transform: rotate(-360deg);
+        }
+    }
+        
+#section0 .intro .bg img:nth-child(2){
+    position: absolute;
+    top: -45%;
+    left: 22%;
+} 
+#section0 .intro .bg img:nth-child(3){
+    position: absolute;
+    top: 16%;
+    right: -20%;
+}
+#section0 .intro .bg img:nth-child(4){
+    position: absolute;
+    bottom: 50%;
+    right: 5%;
+    width: 48%;
+} 
+
+/* Main_section1 portfolio
+* --------------------------------------- */ 
+#section1 .wrap{
+    padding: 0;
+    height: 100%;
+}
+#section1{
+    background: url(../images/bg5.png) no-repeat 105% bottom;
+}
+#section1 .slide h2{
+    margin-top: 50px;
+}
+#section1 .slide .portfolio{
+    width: 50%;
+    margin-right: 5%;
+    height: 57%;
+    position: relative;
+    float: left;
+}
+#section1 .slide .portfolio .img1{
+    width: 70%;
+    position: absolute;
+    top: 12%;
+    left: 5%;
+}
+#section1 .slide .portfolio .img2{
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    left: -10%;
+}
+#section1 .slide .pc3 .img2, #section1 .slide .pc4 .img2{
+    width: 79%;
+    top: 22%;
+    left: -10%;
+}
+#section1 .slide article{
+    float: left;
+    width: 45%;
+    position: relative;
+}
+#section1 .slide article h4{
+    height: 40px;
+    line-height: 38px;
+    font-family: "gsm";
+    font-size: 3.2rem;
+    margin: 6% 0 3%;
+    text-align: left;
+}
+#section1 #slide1 article h4{
+    background: url(../images/circle2_3.png)no-repeat 288px center;
+}#section1 #slide2 article h4{
+    background: url(../images/circle3_3.png)no-repeat 440px center;
+}#section1 #slide3 article h4{
+    background: url(../images/circle4_3.png)no-repeat 368px center;
+}#section1 #slide4 article h4{
+    background: url(../images/circle1_3.png)no-repeat 394px center;
+}
+#section1 .slide article h4 span{
+    font-family: "gsm";
+    font-size: 4.2rem;
+}
+#section1 .slide article p{
+    font-size: 1.5rem;
+    margin: 0 3%;
+    line-height: 1.6;
+    font-weight: 500;
+}
+#section1 .slide article p span{
+    color: #517EA6;
+    font-weight: 600;
+    font-size: 1.9rem;
+    padding: 10% 0 0;
+    display: block;
+    line-height: 30px;
+}
+#section1 .slide .anchor{
+    width: 45%;
+    height: 30%;
+    position: relative;
+    float: left;
+}
+#section1 .slide .anchor a{
+    color: #333;
+    font-weight: 600;
+    display: block;
+    height: 74px;
+    line-height: 90px;
+    position: absolute;
+    text-align: right;
+    font-size: 1.6rem;
+}
+#section1 .slide .anchor .homepage{
+    width: 130px;
+    top: 40%;
+    left: 0%;
+}
+#section1 .slide .anchor .homepage span{
+    color: #fff;
+}
+#section1 #slide1 .anchor .homepage{
+    background: url(../images/circle2_1.png)no-repeat left center; 
+}
+#section1 #slide2 .anchor .homepage{
+    background: url(../images/circle3_1.png)no-repeat left center; 
+}
+#section1 #slide3 .anchor .homepage{
+    background: url(../images/circle4_1.png)no-repeat left center; 
+}
+#section1 #slide4 .anchor .homepage{
+    background: url(../images/circle1_1.png)no-repeat left center; 
+}
+#section1 .slide .anchor .process{
+    width: 110px;
+    top: 40%;
+    left: 30%;
+    margin-left: 5%;
+}
+#section1 #slide1 .anchor .process{
+    background: url(../images/circle2_2.png)no-repeat left center; 
+}
+
+/* Main_section2
+* --------------------------------------- */ 
+#section2 .about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 2%;
+}
+#section2 .about h3{
+    margin-top: 2%;
+    padding-top: 1%;
+}
+#section2 .about .profile { 
+    width: 48%;
+    margin-right: 7%;
+}
+#section2 .about .profile .myimg{
+    width: 100%;
+    box-sizing: border-box;
+}
+#section2 .about .profile .myimg .img{
+    margin: 4% 5% 0 0;
+    width: 80%;
+    position: relative;
+}
+#section2 .about .profile .myimg .img img:nth-child(1){
+    width: 30%;
+    float: left;
+}
+#section2 .about .profile .myimg .img img:nth-child(2){ 
+    float: right;
+    width: 65%;
+    margin-top: 5%;
+}
+#section2 .about .profile .myimg p{ 
+    word-break: keep-all;
+    display: inline-block;
+    float: left;
+    margin: 4% 0 0 4%;
+}
+#section2 .about .profile #pofile{
+    width: 100%;
+    margin-top: 3%
+}
+#section2 .about .profile #pofile > li{
+    height: auto;
+    color: #D9414E;
+    font-size: 1.3em;
+    text-align: left;
+    line-height: 1.6;
+    margin-top: 1%;
+}
+#section2 .about .profile #pofile li > ul > li{
+    height: auto;
+    color: #333;
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+#section2 .about > ul{
+    width: 45%;
+}
+#section2 .about > ul li{
+    height: 200px;
+    text-align: center;
+    transition: 0.6s;
+    box-sizing: border-box;
+    position: relative;
+    padding: 6% 0;
+    border-top: 1px dotted #ddd;
+}
+#section2 .about > ul li:hover{
+    box-sizing: border-box;
+    box-shadow: 2px 2px 25px #ddd;
+}
+#section2 .about > ul li:first-child{
+    border: none;
+}
+#section2 .about > ul li h4{
+    margin: 0 auto 3%;
+    transition: 0.4s;
+    color: #333;
+}
+#section2 .about > ul li:hover h4{
+    color:#D9414E;
+}
+#section2 .about > ul li > img{
+    width: 28%;
+    margin-left: 6%;
+    float: left;
+}
+#section2 .about > ul li:first-child > img{
+    width: 17%; 
+    margin-left: 8%;
+}
+#section2 .about > ul li p{
+    float: left;
+    font-weight: 500;
+    margin: 0 0 0 4%;
+    width: 56%;
+    text-align: left;
+    font-size: 1.5rem;
+}
+#section2 .about > ul li:first-child p{
+    margin-left: 8%;
+    width: 60%;
+}
+
+/* Main_section3 
+* --------------------------------------- */ 
+#section3 h2{
+    margin-top: 3%;
+}
+#section3 .polygon{
+    float: left;
+    width: 40%;
+    height: 60%;  
+    position: relative;
+    margin-top: 8%;
+    transform: scale(0,0);
+    transition: 0.8s;
+}
+#section3 .polygon.on{
+    transform: scale(1,1);
+    transition: 0.8s;
+}
+#section3 .polygon > img{
+    width: 484px;
+}
+#section3 .polygon .polygon6{
+    clip-path: polygon(25% 9%, 73.8% 12%, 94% 54.8%, 71.7% 94%, 27% 97%, 12% 54.8%);
+    width: 305px;
+    height: 287px;
+    background: rgba(239, 123, 23, 0.7);
+    position: absolute;
+    top: 7%;
+    left: 90px;
+}
+#section3 .pos{
+    float: left;
+    width: 55%;
+    height: 100%;
+    margin: 5% 0 0 5%;
+}
+#section3 .pos article{
+    margin-bottom: 8%;
+    position: relative;
+    opacity: 0;
+    transition: 0.4s;
+}
+#section3 .pos article:nth-child(3){
+    margin-bottom: 0;
+}
+#section3 .pos article h3{
+    text-align: left;
+    margin-bottom: 3%;
+}
+
+/* Main_section4 contact
+* --------------------------------------- */ 
+#section4{
+    position: relative;
+}
+.contact_bg img:nth-child(1){
+    position: absolute;
+    top: 11%;
+    right: -18%;
+    animation: contactbg1 3s infinite linear alternate;
+}
+    @keyframes contactbg1{
+        0%{transform: scale(1);}
+        100%{transform: scale(0.5);}
+    }
+.contact_bg img:nth-child(2){
+    position: absolute;
+    top: 11%;
+    right: -18%;
+    opacity: 0.9;
+}
+.contact_bg img:nth-child(3){
+    position: absolute;
+    top: 40%;
+    left: -15%;
+}
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.intro h1{
+    font-size: 3.3rem;
+    font-weight: 600;
+    margin-bottom: 5%;
+    width: 50%;
+}
+.intro .contact{ 
+    width: 50%;
+    height: 100%;
+}
+.intro .contact h2{
+    margin-bottom: 5%;
+}
+.intro .contact .contact_text{
+    width: 80%;
+    height: 100%;
+    padding-bottom: 5%;
+}
+.intro .contact .contact_text p{
+    line-height: 2;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.intro .contact .contact_text p a{
+    color: #555;
+}
+.intro .contact .contact_text p:hover a{
+    text-decoration: underline;
+}
+.intro .contact .link{
+    width: 60%;
+    margin-top: 5%;
+    height: 70px;
+}
+.intro .contact .link li{
+    height: 70px;
+    text-align: center;
+    float: left;
+    font-weight: 500;
+    margin-right: 15%;
+    font-size: 1.6rem;
+}
+.intro .contact .link li:hover a{
+    text-decoration: underline;
+}
+
+
+/* 모바일, 태블릿
+* --------------------------------------- */ 
+
+@media (max-width:480px) { /* 모바일용 */
+
+
+}
+
+@media (min-width:481px) and (max-width:800px) { /* 태블릿용 */
+
+
+}
